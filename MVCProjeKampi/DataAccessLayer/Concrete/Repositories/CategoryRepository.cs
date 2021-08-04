@@ -20,6 +20,11 @@ namespace DataAccessLayer.Concrete.Repositories
             c.SaveChanges();
         }
 
+        public Category Get(Expression<Func<Category, bool>> filter)
+        {
+            throw new NotImplementedException();
+        }
+
         public void Insert(Category p)
         {
             _object.Add(p);
@@ -31,10 +36,17 @@ namespace DataAccessLayer.Concrete.Repositories
             return _object.ToList();
         }
 
-        public List<Category> Liste(Expression<Func<Category, bool>> filter)
+        public List<Category> List(object p)
         {
             throw new NotImplementedException();
         }
+
+        public List<Category> List(Expression<Func<Category, bool>> filter)
+        {
+            throw new NotImplementedException();
+        }
+
+      
 
         public void Update(Category p)
         {

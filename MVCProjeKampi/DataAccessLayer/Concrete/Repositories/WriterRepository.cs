@@ -19,6 +19,11 @@ namespace DataAccessLayer.Concrete.Repositories
             throw new NotImplementedException();
         }
 
+        public Writer Get(Expression<Func<Writer, bool>> filter)
+        {
+            throw new NotImplementedException();
+        }
+
         public void Insert(Writer p)
         {
             throw new NotImplementedException();
@@ -29,10 +34,17 @@ namespace DataAccessLayer.Concrete.Repositories
             throw new NotImplementedException();
         }
 
-        public List<Writer> Liste(Expression<Func<Writer, bool>> filter)
+        public List<Writer> List(object p)
         {
             throw new NotImplementedException();
         }
+
+        public List<Writer> List(Expression<Func<Writer, bool>> filter)
+        {
+            throw new NotImplementedException();
+        }
+
+       
 
         public void Update(Writer p)
         {
